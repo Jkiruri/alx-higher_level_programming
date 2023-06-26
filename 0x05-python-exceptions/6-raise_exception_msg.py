@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-# 6-raise_exception_msg.py
-# Gedeon Obae Gekonge <gideonobae@gmail.com>
-
 
 def raise_exception_msg(message=""):
-    """Raise a NameError exception with a message."""
+    """raises a name exception with a message.
+
+    Args:
+        message (str): Message to be passed
+
+    Returns:
+        Nothing
+    """
     raise NameError(message)

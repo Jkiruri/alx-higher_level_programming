@@ -1,22 +1,21 @@
 #!/usr/bin/python3
-# 0-safe_print_list.py
-# Gedeon Obae Gekonge <gideonobae@gmail.com>
-
 
 def safe_print_list(my_list=[], x=0):
-    """Print x elememts of a list.
+    """Print n elements of a list
+
     Args:
-        my_list (list): The list to print elements from.
-        x (int): The number of elements of my_list to print.
+        my_list (list): List to print elements from
+        x (int): Number of elements to print
+
     Returns:
-        The number of elements printed.
+        Number of element printed
     """
-    ret = 0
+    n = 0
     for i in range(x):
         try:
-            print("{}".format(my_list[i]), end="")
-            ret += 1
+            print(f"{my_list[i]}", end="")
+            n += 1
         except IndexError:
             break
     print("")
-    return (ret)
+    return (n)

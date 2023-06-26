@@ -1,22 +1,22 @@
 #!/usr/bin/python3
-# 2-safe_print_list_integers.py
-# Gedeon Obae Gekonge <gideonobae@gmail.com.com>
-
 
 def safe_print_list_integers(my_list=[], x=0):
-    """Print the first x elements of a list that are integers.
-    Args:
-        my_list (list): The list to print elements from.
-        x (int): The number of elements of my_list to print.
-    Returns:
-        The number of elements printed.
+    """prints the first x elements of a
+        list and only integers.
+
+        Args:
+            my_list (list): list to print elemnts from
+            x (int): Number of elements to print
+
+        Returns:
+            The real number of integers printed
     """
-    ret = 0
-    for i in range(0, x):
+    n = 0
+    for i in range(x):
         try:
             print("{:d}".format(my_list[i]), end="")
-            ret += 1
+            n += 1
         except (ValueError, TypeError):
             continue
     print("")
-    return (ret)
+    return (n)
